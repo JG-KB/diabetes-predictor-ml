@@ -106,5 +106,5 @@ Before removing any features, we found feature importance to be:
 ## **Results:**
 
 In the end, we were able to achieve an accuracy of 75% on the test set, precision of 75%, and an AUC of 0.83.
-![Recieving Operating Characteristic Curve](image.png)
+![Recieving Operating Characteristic Curve](Resources/image.png)
 
