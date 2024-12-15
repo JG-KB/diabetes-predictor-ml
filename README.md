@@ -8,8 +8,6 @@ Diabetes is a chronic disease that affects how your body turns food into energy.
 
 In this project we examined 8 different models to predict whether a person has diabetes. We started with a simple logistic regression model, and then moved on to more complex models such as random forests and gradient boosting. After tuning the hyperparameters of the random forest and gradient boosting models, we found that the gradient boosting model performed the best.
 
-In the end, we were able to achieve an accuracy of 75% on the test set, precision of 75%, and an AUC of 0.83.
-
 ## **Data:**
 
 The dataset contains 70,000 observations and 18 features. The features are as follows:
@@ -54,30 +52,16 @@ The dataset contains 70,000 observations and 18 features. The features are as fo
 We looked at 8 different models to predict whether a person has diabetes. SVM, Log Regression, Decision Tree, KNN, Random Forest, Extra Trees, Gradient Booster, AdaBoost.
 
 Our inital results were:
-
-Logistic Regression Training Accuracy: 0.747
-Logistic Regression Test Accuracy: 0.746
-
-SVM Training Accuracy: 0.747
-SVM Test Accuracy: 0.745
-
-Decision Tree Training Accuracy: 0.972
-Decision Tree Test Accuracy: 0.658
-
-K-Nearest Neighbors Training Accuracy: 0.798
-K-Nearest Neighbors Test Accuracy: 0.716
-
-Random Forest Training Accuracy: 0.972
-Random Forest Test Accuracy: 0.728
-
-Extremely Random Trees Training Accuracy: 0.972
-Extremely Random Trees Test Accuracy: 0.712
-
-**Gradient Boosting Training Accuracy: 0.754**
-**Gradient Boosting Test Accuracy: 0.753**
-
-AdaBoost Training Accuracy: 0.754
-AdaBoost Test Accuracy: 0.753
+| Model | Training Accuracy | Test Accuracy |
+|-------|------------------|---------------|
+| Logistic Regression | 0.747 | 0.746 |
+| SVM | 0.747 | 0.745 |
+| Decision Tree | 0.972 | 0.658 |
+| K-Nearest Neighbors | 0.798 | 0.716 |
+| Random Forest | 0.972 | 0.728 |
+| Extremely Random Trees | 0.972 | 0.712 |
+| **Gradient Boosting** | **0.754** | **0.753** |
+| AdaBoost | 0.754 | 0.753 |
 
 ## **Model Tuning:**
 
