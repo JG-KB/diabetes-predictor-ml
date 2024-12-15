@@ -100,3 +100,8 @@ Overall Metrics:
 
 This shows our model is particularly good at identifying diabetes cases (87% recall) while maintaining reasonable precision (70%). For non-diabetes cases, the model has high precision (83%) but lower recall (63%).
 
+![Confusion Matrix](Resources/confusion_matrix_gradient_descent.png)
+
+The confusion matrix above provides a detailed breakdown of our model's predictions. 
+
+Out of the 14,139 total cases, our model correctly identified 4,466 people without diabetes (true negatives) and 6,138 people with diabetes (true positives). However, there were 2,624 false positives (people incorrectly classified as having diabetes) and 911 false negatives (people with diabetes who were missed by the model). This is inline with our model's tedency to be more sensitive to diabetes cases (with our higher recall) at the expense of higher false positivies. The higher number of false positives compared to false negatives aligns with our preference to err on the side of caution, as missing a diabetes diagnosis (false negative) could have more serious consequences than a false positive which would likely be caught in subsequent medical testing.
