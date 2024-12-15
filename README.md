@@ -65,30 +65,38 @@ Our inital results were:
 
 ## **Model Tuning:**
 
-Before removing any features, we found feature importance to be:
+The most important features in our dataset for predicting diabetes are:
 
 | Feature | Importance |
 |---------|------------|
-| GeneralHealth | 0.4102 |
-| HighBloodPressure | 0.2325 |
-| BodyMassIndex | 0.1213 |
-| AgeMean | 0.1016 |
-| HighCholesterol | 0.0695 |
-| HeartDiseaseHistory | 0.0165 |
-| DifficultyWalking | 0.0128 |
-| HeavyAlcoholConsumption | 0.0105 |
-| CholesterolCheck | 0.0095 |
-| Gender | 0.0075 |
-| PoorPhysicalHealthDays | 0.0024 |
-| StrokeHistory | 0.0023 |
-| PoorMentalHealthDays | 0.0017 |
-| PhysicalActivity | 0.0005 |
-| DailyVegetableIntake | 0.0005 |
-| SmokerStatus | 0.0003 |
-| DailyFruitIntake | 0.0002 |
+| HighBloodPressure | 0.344331 |
+| GeneralHealth | 0.284835 |
+| BodyMassIndex | 0.120282 |
+| AgeMean | 0.105857 |
+| HighCholesterol | 0.067682 |
+| DifficultyWalking | 0.016771 |
+| HeartDiseaseHistory | 0.016018 |
+| HeavyAlcoholConsumption | 0.011598 |
+| CholesterolCheck | 0.009550 |
+| Gender | 0.007637 |
+
 
 ## **Results:**
 
-In the end, we were able to achieve an accuracy of 75% on the test set, precision of 75%, and an AUC of 0.83.
+In the end, we were able to achieve an accuracy of 75% on the test set, precision of 70%, and an AUC of 0.832.
 ![Recieving Operating Characteristic Curve](Resources/image.png)
+
+The classification report below shows the detailed performance metrics for our best performing model:
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| No Diabetes (0) | 0.83 | 0.63 | 0.71 | 7,090 |
+| Diabetes (1) | 0.70 | 0.87 | 0.77 | 7,049 |
+
+Overall Metrics:
+- Accuracy: 75% (10,604/14,139 cases)
+- Macro Average: 0.76 precision, 0.75 recall, 0.74 F1-score
+- Weighted Average: 0.76 precision, 0.75 recall, 0.74 F1-score
+
+This shows our model is particularly good at identifying diabetes cases (87% recall) while maintaining reasonable precision (70%). For non-diabetes cases, the model has high precision (83%) but lower recall (63%).
 
